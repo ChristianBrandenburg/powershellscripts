@@ -104,6 +104,7 @@ New-AzVm `
   -SubnetName "Public" `
   -ImageName "Win2016Datacenter" `
   -Name "Opg2VmPublic"
+  -Credential $cred
 
 New-AzVm `
   -ResourceGroupName $rg `
@@ -112,3 +113,4 @@ New-AzVm `
   -SubnetName "Private" `
   -ImageName "Win2016Datacenter" `
   -Name "Opg2VmPrivate"
+  -Credential $cred
